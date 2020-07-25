@@ -73,9 +73,10 @@ header h4{
 
 }
 .main-container {
-    /* border: 2px red solid; */
+    border: 2px red solid;
     width: 100%;
     height: calc(100vh);
+    
     z-index: 2;
     padding-top: 17vh;
     display: flex;
@@ -83,6 +84,8 @@ header h4{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    background-color: bisque;
+
     scrollbar-color: blue;
     scrollbar-track-color: black;
     scrollbar-base-color: black;
@@ -90,23 +93,35 @@ header h4{
     
 }
 .main-container h3 {
-    /* padding: 1rem; */
+    max-width: 50%;
+    max-height: 50%;
 }
 p {
     padding: 15px;
 }
 .para {
     place-content: center center;
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     margin: 1rem;
-    text-align: center;
+    text-align: left;
     border: 2px solid rgb(2, 126, 43);
     overflow-x: hidden;
     
 }
 .para:nth-child(odd){
     margin-bottom: calc(1vw + 2rem);
+}
+.para:nth-of-type(#para-title){
+    color: blue;
+    
+
+}
+
+#para-title{
+    font-size: 1.8rem;
+    text-align: center;
+
 }
 
 footer{
